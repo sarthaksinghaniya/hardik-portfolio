@@ -5,8 +5,8 @@ import { Github, ExternalLink } from 'lucide-react'
 const PROJECTS = [
   {
     title: '♻️ ReVibe',
-    desc: 'An innovative e-wast management platform.',
-    ss: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=600&auto=format&fit=crop',
+    desc: 'An innovative e-waste management platform.',
+    ss: 'https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=600&auto=format&fit=crop',
     tech: ['React', 'JavaScript', 'Node.js', 'CSS'],
     live: 'https://reviber.netlify.app/',
     code: 'https://github.com/sarthaksinghaniya/ReVibe'
