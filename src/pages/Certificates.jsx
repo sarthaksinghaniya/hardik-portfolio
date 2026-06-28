@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// ✅ Certificates data (added URLs for View button)
 const CERTS = {
   tech: [
-    { title: "Certificate 1", org: "Training", date: "2026", img: "/certs/cert_1.jpeg", link: "/certs/cert_1.jpeg" },
-    { title: "Certificate 2", org: "Training", date: "2026", img: "/certs/cert_2.jpeg", link: "/certs/cert_2.jpeg" },
-    { title: "Certificate 3", org: "Training", date: "2026", img: "/certs/cert_3.jpeg", link: "/certs/cert_3.jpeg" },
-    { title: "Certificate 4", org: "Training", date: "2026", img: "/certs/cert_4.jpeg", link: "/certs/cert_4.jpeg" },
-    { title: "Certificate 5", org: "Training", date: "2026", img: "/certs/cert_5.jpeg", link: "/certs/cert_5.jpeg" },
+    { title: "Certificate 1", org: "Training", date: "2026", img: "/certificate/cert_1.jpeg", link: "/certificate/cert_1.jpeg" },
+    { title: "Certificate 2", org: "Training", date: "2026", img: "/certificate/cert_2.jpeg", link: "/certificate/cert_2.jpeg" },
+    { title: "Certificate 3", org: "Training", date: "2026", img: "/certificate/cert_3.jpeg", link: "/certificate/cert_3.jpeg" },
+    { title: "Certificate 4", org: "Training", date: "2026", img: "/certificate/cert_4.jpeg", link: "/certificate/cert_4.jpeg" },
+    { title: "Certificate 5", org: "Training", date: "2026", img: "/certificate/cert_5.jpeg", link: "/certificate/cert_5.jpeg" },
   ],
   other: [
-    { title: "Certificate 6", org: "Achievement", date: "2026", img: "/certs/cert_6.jpeg", link: "/certs/cert_6.jpeg" },
-    { title: "Certificate 7", org: "Achievement", date: "2026", img: "/certs/cert_7.jpeg", link: "/certs/cert_7.jpeg" },
-    { title: "Certificate 8", org: "Achievement", date: "2026", img: "/certs/cert_8.jpeg", link: "/certs/cert_8.jpeg" },
-    { title: "Certificate 9", org: "Achievement", date: "2026", img: "/certs/cert_9.jpeg", link: "/certs/cert_9.jpeg" },
+    { title: "Certificate 6", org: "Achievement", date: "2026", img: "/certificate/cert_6.jpeg", link: "/certificate/cert_6.jpeg" },
+    { title: "Certificate 7", org: "Achievement", date: "2026", img: "/certificate/cert_7.jpeg", link: "/certificate/cert_7.jpeg" },
+    { title: "Certificate 8", org: "Achievement", date: "2026", img: "/certificate/cert_8.jpeg", link: "/certificate/cert_8.jpeg" },
+    { title: "Certificate 9", org: "Achievement", date: "2026", img: "/certificate/cert_9.jpeg", link: "/certificate/cert_9.jpeg" },
   ],
 };
 
