@@ -4,8 +4,8 @@ import { Github, ExternalLink } from 'lucide-react'
 
 const PROJECTS = [
   {
-    title: '🎵 ReVibe',
-    desc: 'A dynamic web application to discover and share vibes.',
+    title: '♻️ ReVibe',
+    desc: 'An innovative e-waste management platform.',
     ss: 'https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?q=80&w=600&auto=format&fit=crop',
     tech: ['React', 'JavaScript', 'Node.js', 'CSS'],
     live: 'https://reviber.netlify.app/',

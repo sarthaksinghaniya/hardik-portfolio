@@ -151,7 +151,7 @@ export default function Resume() {
         >
           <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>💼 Projects</h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
-            <li>1️⃣ <strong>ReVibe:</strong> Dynamic web application to discover and share vibes (React, Node.js)</li>
+            <li>♻️ <strong>ReVibe:</strong> An innovative e-waste management platform (React, Node.js)</li>
             <li>2️⃣ <strong>Hanu-Planner:</strong> Interactive planning and scheduling application (React, Tailwind CSS)</li>
           </ul>
         </motion.div>
