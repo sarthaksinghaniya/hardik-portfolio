@@ -143,29 +143,19 @@ export default function Navbar() {
         {/* Hamburger */}
         {showButton && (
           <div className="mobile-btn">
-            <motion.button
-              animate={{ 
-                boxShadow: ["0px 0px 0px rgba(0, 180, 255, 0)", "0px 0px 15px rgba(0, 180, 255, 0.6)", "0px 0px 0px rgba(0, 180, 255, 0)"],
-                scale: [1, 1.05, 1]
-              }}
-              transition={{ duration: 2, repeat: Infinity }}
+            <button
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                background: "rgba(255,255,255,0.1)",
-                border: "1px solid rgba(0, 180, 255, 0.5)",
-                padding: "6px 14px",
-                borderRadius: "8px",
+                background: "none",
+                border: "none",
                 color: "#fff",
+                fontSize: "1.8rem",
                 cursor: "pointer",
                 zIndex: 10000,
               }}
               onClick={() => setIsOpen(!isOpen)}
             >
-              <span style={{ fontSize: "1rem", fontWeight: 500 }}>{isOpen ? "Close" : "Menu"}</span>
-              <span style={{ fontSize: "1.4rem" }}>{isOpen ? "✕" : "☰"}</span>
-            </motion.button>
+              {isOpen ? "✕" : "☰"}
+            </button>
           </div>
         )}
       </nav>

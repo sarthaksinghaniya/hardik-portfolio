@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import "../CSS/Home.css"
 import '../index.css' 
@@ -28,6 +28,15 @@ export default function Home() {
     { img: gmailLogo, title: 'Email', link: 'mailto:hardiktalwar2006@gmail.com' },
     { img: whatsappLogo, title: 'WhatsApp', link: 'https://wa.me/+917706859594' },
     { img: instagramLogo, title: 'Instagram', link: 'https://www.instagram.com/kunj_2834/' },
+  ]
+
+  const exploreLinks = [
+    { label: '🚀 Projects', to: '/projects', desc: 'View my technical work' },
+    { label: '💼 Experience', to: '/experience', desc: 'My professional journey' },
+    { label: '🎯 Skills', to: '/skills', desc: 'Tech stack & tools' },
+    { label: '📜 Certificates', to: '/certificates', desc: 'My achievements' },
+    { label: '📄 Resume', to: '/resume', desc: 'Download my CV' },
+    { label: '📬 Contact', to: '/contact', desc: 'Get in touch' }
   ]
 
   return (
@@ -139,6 +148,36 @@ export default function Home() {
                 className="quick-link-img"
               />
             </motion.a>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Explore Grid for Mobile Friendly Navigation */}
+      <motion.div className="explore-section" style={{ marginTop: '4rem', width: '100%', maxWidth: '1000px', textAlign: 'center' }}>
+        <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', color: '#fff' }}>Explore My Portfolio</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.2rem', padding: '0 1rem' }}>
+          {exploreLinks.map((item, idx) => (
+            <Link key={idx} to={item.to} style={{ textDecoration: 'none' }}>
+              <motion.div 
+                whileHover={{ scale: 1.05, background: 'linear-gradient(145deg, rgba(0,255,200,0.15), rgba(10,10,10,0.9))', borderColor: 'var(--accent)' }}
+                transition={{ type: 'spring', stiffness: 200 }}
+                style={{
+                  background: 'rgba(255,255,255,0.05)',
+                  border: '1px solid rgba(255,255,255,0.1)',
+                  borderRadius: '16px',
+                  padding: '1.5rem',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  color: '#fff',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.2)'
+                }}
+              >
+                <h3 style={{ fontSize: '1.3rem', margin: 0, color: 'var(--accent)' }}>{item.label}</h3>
+                <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', margin: 0 }}>{item.desc}</p>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </motion.div>
