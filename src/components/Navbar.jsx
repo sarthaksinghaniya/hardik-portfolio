@@ -23,8 +23,7 @@ export default function Navbar() {
 
   // Check if links overflow nav width (to show hamburger)
   const checkOverflow = () => {
-    if (!navRef.current || !linksRef.current) return;
-    setShowButton(linksRef.current.scrollWidth > navRef.current.offsetWidth);
+    setShowButton(window.innerWidth < 1024);
   };
 
   useEffect(() => {
@@ -67,7 +66,7 @@ export default function Navbar() {
           >
             HT
           </motion.div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex", flexDirection: "column", whiteSpace: "nowrap" }}>
             <h1 style={{ margin: 0, fontSize: 14 }}>Hardik Talwar</h1>
             <div style={{ fontSize: 12, color: "var(--muted)" }}>
               Database Manager • Data Engineer
