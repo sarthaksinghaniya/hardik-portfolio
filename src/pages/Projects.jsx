@@ -6,7 +6,7 @@ const PROJECTS = [
   {
     title: '♻️ ReVibe',
     desc: 'An innovative e-waste management platform.',
-    ss: 'https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?q=80&w=600&auto=format&fit=crop',
+    ss: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=600&auto=format&fit=crop',
     tech: ['React', 'JavaScript', 'Node.js', 'CSS'],
     live: 'https://reviber.netlify.app/',
     code: 'https://github.com/sarthaksinghaniya/ReVibe'
