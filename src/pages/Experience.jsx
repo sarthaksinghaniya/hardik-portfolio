@@ -22,7 +22,7 @@ const EXPERIENCES = [
   },
   {
     title: 'HackInfinity',
-    role: 'Team Member',
+    role: 'Core Member',
     desc: 'Organizing and participating in high-impact hackathons and tech events.',
     img: '/offer_letter/hackinfinity.jpeg',
     link: '#',
