@@ -145,16 +145,21 @@ export default function Navbar() {
           <div className="mobile-btn">
             <button
               style={{
-                background: "none",
-                border: "none",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                background: "rgba(255,255,255,0.1)",
+                border: "1px solid rgba(255,255,255,0.2)",
+                padding: "6px 14px",
+                borderRadius: "8px",
                 color: "#fff",
-                fontSize: "1.8rem",
                 cursor: "pointer",
                 zIndex: 10000,
               }}
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? "✕" : "☰"}
+              <span style={{ fontSize: "1rem", fontWeight: 500 }}>{isOpen ? "Close" : "Menu"}</span>
+              <span style={{ fontSize: "1.4rem" }}>{isOpen ? "✕" : "☰"}</span>
             </button>
           </div>
         )}
