@@ -143,13 +143,18 @@ export default function Navbar() {
         {/* Hamburger */}
         {showButton && (
           <div className="mobile-btn">
-            <button
+            <motion.button
+              animate={{ 
+                boxShadow: ["0px 0px 0px rgba(0, 180, 255, 0)", "0px 0px 15px rgba(0, 180, 255, 0.6)", "0px 0px 0px rgba(0, 180, 255, 0)"],
+                scale: [1, 1.05, 1]
+              }}
+              transition={{ duration: 2, repeat: Infinity }}
               style={{
                 display: "flex",
                 alignItems: "center",
                 gap: "8px",
                 background: "rgba(255,255,255,0.1)",
-                border: "1px solid rgba(255,255,255,0.2)",
+                border: "1px solid rgba(0, 180, 255, 0.5)",
                 padding: "6px 14px",
                 borderRadius: "8px",
                 color: "#fff",
@@ -160,7 +165,7 @@ export default function Navbar() {
             >
               <span style={{ fontSize: "1rem", fontWeight: 500 }}>{isOpen ? "Close" : "Menu"}</span>
               <span style={{ fontSize: "1.4rem" }}>{isOpen ? "✕" : "☰"}</span>
-            </button>
+            </motion.button>
           </div>
         )}
       </nav>
