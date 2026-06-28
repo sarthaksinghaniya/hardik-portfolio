@@ -67,3 +67,66 @@
   gap: 1.5rem;
   justify-content: center; /* ensures icons are centered */
 }
+
+/* Responsive Mobile Styles */
+@media screen and (max-width: 768px) {
+  .home-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .photo-container {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .photo-ring {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .photo-frame {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .home-info {
+    min-width: 100%;
+    align-items: center;
+  }
+  
+  .home-title {
+    font-size: 2.2rem;
+  }
+  
+  .typing-effect {
+    font-size: 0.9rem;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    text-align: center;
+  }
+  
+  .profession-tags {
+    justify-content: center;
+  }
+  
+  .info-cards {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  .info-card {
+    min-width: 140px;
+    padding: 10px;
+  }
+
+  .quick-links-title {
+    font-size: 1.2rem;
+  }
+
+  .quick-link-img {
+    width: 40px;
+    height: 40px;
+  }
+}
